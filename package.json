@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  }
+}
