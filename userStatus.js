@@ -10,19 +10,6 @@ async function getAllUsers() {
     }
 }
 
-async function getUserStatus(username) {
-
-    const users = await getAllUsers();
-
-
-    if (username in users) {
-        console.log(users[username]);
-        return isEnabled = users[username];
-    } else {
-        return "This user does not exist";
-    }
-}
-
 module.exports = {
     getUserStatus: async function(username) {
         const users = await getAllUsers();
